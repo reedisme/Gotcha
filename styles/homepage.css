@@ -2,22 +2,50 @@ h1 {
   color: #49176e;
 }
 
+.body {
+overflow-x: hidden;
+}
+
 .banner {
   width:100%;
-  background-color:purple;
   height:200px;
   text-align:center;
   letter-spacing:50px;
   font-size:200px;
   margin-left:-10px;
+  z-index:99;
+  position:relative;
   padding-right:18px;
   margin-top:-50px;
+}
+
+.page {
+  width:101%;
+  padding-top:50px;
+  background-image: url("https://www.goshen.edu/wp-content/uploads/sites/2/2015/05/gc.fall_.2014.321_2-e1416922763939-1024x594.jpg");
+  animation-name: bg;
+  animation-duration: .3s;
+  margin-top:-200px;
+  margin-left:-10px;
+  background-size:cover;
+}
+
+.content {
+  display:block;
+  box-shadow:0px 0px 20px rgba(0,0,0,.3);
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:155px;
+  padding:25px;
+  width:75%;
+  background-color:rgba(240, 240, 240, 1);
+  height:100vh;
 }
 
 .banner_title {
   margin-top:0px;
   line-height:200px;
-  color:white;
+  color:rgba(240, 240, 240, 1);
   font-family: Garamond;
 }
 
@@ -27,8 +55,14 @@ h1 {
 #  padding-right: 20px;
 #  margin-left: -10px;
 #  margin-top:-10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+  background-color:rgba(240, 240, 240, 1);
+  margin-left:-10px;
+  margin-top:-10px;
    display:block;
-   width:100%;
+  position:relative;
+  z-index:99;
+   width:101%;
 #  height:100vh;
 }
 
@@ -89,4 +123,8 @@ animation-duration: 0.4s;
   0% {top:-200px;opacity:0;}
   50% {opacity:1; top:-25px;}
   100% {opacity:1; top:-50px;}
+}
+@keyframes bg {
+from {opacity:0;}
+to {opacity:1;}
 }
