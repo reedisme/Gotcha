@@ -1,18 +1,17 @@
 body {
-    background-color: white;
+    background-color: black;
     overflow-x: hidden;
     font-family: Franklin Gothic Medium;
     animation-name: load_c;
     animation-delay: .4s;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 }
 .bubble {
     width:250px;
-    margin-top:-500px;
+    margin-top:-1000px;
     z-index:1;
-    opacity:0;
     height:250px;
     position: absolute;
     background-color:#2d0e4480;
@@ -23,7 +22,7 @@ body {
     animation-name: load;
     animation-duration: .4s;
     position:absolute;
-    color: #2d0e44;
+    color: white;/*#2d0e44;*/
     font-size: 25px;
     font-weight: 500;
     z-index:99;
@@ -34,14 +33,14 @@ body {
     width:300px;
 }
 .footer {
-    background-color:#2d0e44;
-    color:white;
+    background-color: white;/*#2d0e44;*/
+    color:black;
 }
 .header {
     height:50px;
     margin-left: -10px;
     margin-top: -25px;
-    background-color:white;
+    background-color:black;
     margin-right:-8px;
 }
 .gotcha {
@@ -50,8 +49,8 @@ body {
     user-select: none;
     position:relative;
     z-index:98;
-    color:white;
-    font-family: Franklin Gothic Bold;
+    color:black;
+    font-family: Stencil;/*Franklin Gothic Bold;*/
     font-size: 26vw;
     margin-top:-7vw;
     margin-left:-26px;
@@ -60,13 +59,15 @@ body {
     width:105%;
     height:100vh;
     position:relative;
-    margin-top:-24vw;
+    overflow-y:hidden;
+    margin-top:-26vw;
     margin-left:-10px;
-    background-color:white;
+    background-color:black;
 }
 .content {
     font-family: Franklin Gothic Medium;
     font-size:20px;
+    color:white;
     padding-top:250px;
     width:50%;
     margin: 0 auto;
@@ -90,8 +91,8 @@ to {margin-top:19px;}
 }
 
 @keyframes load_c {
-from {background-color:white;}
-to {background-color:#2d0e44;}
+from {background-color:black;}
+to {background-color:#2d0e44} /*hite; #2d0e44;*/
 }
 @keyframes bubble {
 0% {margin-top:-500px;}
