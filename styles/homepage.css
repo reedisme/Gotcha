@@ -12,9 +12,6 @@ body {
     width:250px;
     margin-top:-500px;
     z-index:1;
-    animation-name: bubble;
-    animation-duration:15s;
-    animation-delay:1s;
     opacity:0;
     height:250px;
     position: absolute;
@@ -29,6 +26,7 @@ body {
     color: #2d0e44;
     font-size: 25px;
     font-weight: 500;
+    z-index:99;
     left: 86px;
     right: 0;
     margin: 0 auto;
@@ -51,7 +49,7 @@ body {
     -moz-user-select: none;
     user-select: none;
     position:relative;
-    z-index:99;
+    z-index:98;
     color:white;
     font-family: Franklin Gothic Bold;
     font-size: 26vw;
