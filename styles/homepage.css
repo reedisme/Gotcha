@@ -1,12 +1,25 @@
 body {
     background-color: white;
     overflow-x: hidden;
-    font-family: Franklin Gothic;
+    font-family: Franklin Gothic Medium;
     animation-name: load_c;
     animation-delay: .4s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+}
+.bubble {
+    width:250px;
+    margin-top:-500px;
+    z-index:1;
+    animation-name: bubble;
+    animation-duration:15s;
+    animation-delay:1s;
+    opacity:0;
+    height:250px;
+    position: absolute;
+    background-color:#2d0e4480;
+    border-radius:500px;
 }
 .logo {
     font-family: Garamond;
@@ -37,6 +50,8 @@ body {
     text-align: center;
     -moz-user-select: none;
     user-select: none;
+    position:relative;
+    z-index:99;
     color:white;
     font-family: Franklin Gothic Bold;
     font-size: 26vw;
@@ -52,7 +67,7 @@ body {
     background-color:white;
 }
 .content {
-    font-family: Franklin Gothic;
+    font-family: Franklin Gothic Medium;
     font-size:20px;
     padding-top:250px;
     width:50%;
@@ -79,4 +94,8 @@ to {margin-top:19px;}
 @keyframes load_c {
 from {background-color:white;}
 to {background-color:#2d0e44;}
+}
+@keyframes bubble {
+0% {margin-top:-500px;}
+100% {opacity:1;margin-top:1000px;}
 }
