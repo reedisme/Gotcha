@@ -1,130 +1,82 @@
-h1 {
-  color: #49176e;
+body {
+    background-color: white;
+    overflow-x: hidden;
+    font-family: Franklin Gothic;
+    animation-name: load_c;
+    animation-delay: .4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
-
-.body {
-overflow-x: hidden;
+.logo {
+    font-family: Garamond;
+    animation-name: load;
+    animation-duration: .4s;
+    position:absolute;
+    color: #2d0e44;
+    font-size: 25px;
+    font-weight: 500;
+    left: 86px;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 19px;
+    width:300px;
 }
-
-.banner {
-  width:100%;
-  height:200px;
-  text-align:center;
-  letter-spacing:50px;
-  font-size:200px;
-  margin-left:-10px;
-  z-index:99;
-  position:relative;
-  padding-right:18px;
-  margin-top:-50px;
+.footer {
+    background-color:#2d0e44;
+    color:white;
 }
-
-.page {
-  width:101%;
-  padding-top:50px;
-  background-image: url("https://www.goshen.edu/wp-content/uploads/sites/2/2015/05/gc.fall_.2014.321_2-e1416922763939-1024x594.jpg");
-  animation-name: bg;
-  animation-duration: .3s;
-  margin-top:-200px;
-  margin-left:-10px;
-  background-size:cover;
-}
-
-.content {
-  display:block;
-  box-shadow:0px 0px 20px rgba(0,0,0,.3);
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:155px;
-  padding:25px;
-  width:75%;
-  background-color:rgba(240, 240, 240, 1);
-  height:100vh;
-}
-
-.banner_title {
-  margin-top:0px;
-  line-height:200px;
-  color:rgba(240, 240, 240, 1);
-  font-family: Garamond;
-}
-
 .header {
-#  background-image: url("https://www.greatvaluecolleges.net/wp-content/uploads/2016/07/Goshen_College_Gate-1-1024x683.jpg");
-#  background-size: cover;
-#  padding-right: 20px;
-#  margin-left: -10px;
-#  margin-top:-10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-  background-color:rgba(240, 240, 240, 1);
-  margin-left:-10px;
-  margin-top:-10px;
-   display:block;
-  position:relative;
-  z-index:99;
-   width:101%;
-#  height:100vh;
+    height:50px;
+    margin-left: -10px;
+    margin-top: -25px;
+    background-color:white;
+    margin-right:-8px;
 }
-
-.log_reg {
-  line-height:5px;
-  font-family: Helvetica;
-  padding-right:10px;
-  font-size:15px;
-  color: #49176e;
-}
-
-.gotcha{
-  font-family: Garamond;
-  position:relative;
-  text-align:center;
-  letter-spacing: 10px;
-  font-size: 45px;
-  top:-50px;
-}
-
-.gclogo {
-  display:block;
-  margin-right:auto;
-  margin-left:auto;
-  width:300px;
-  top:-5px;
-  position:relative;
-}
-
-@media screen and (min-width:575px){
-
-.header {
-  text-align:center;
-}
-
-.gclogo {
-padding-left:115px;
-animation-name: logo;
-animation-duration: 0.4s;
-}
-
 .gotcha {
-  animation-name:gotcha;
-  animation-duration: 0.6s;
+    text-align: center;
+    -moz-user-select: none;
+    user-select: none;
+    color:white;
+    font-family: Franklin Gothic Bold;
+    font-size: 26vw;
+    margin-top:-7vw;
+    margin-left:-26px;
+}
+.page {
+    width:105%;
+    height:100vh;
+    position:relative;
+    margin-top:-24vw;
+    margin-left:-10px;
+    background-color:white;
+}
+.content {
+    font-family: Franklin Gothic;
+    font-size:20px;
+    padding-top:250px;
+    width:50%;
+    margin: 0 auto;
 }
 
-.log_reg {
-  float: right;
-}
+@font-face{
+    font-family: "Franklin Gothic Medium";
+    src: url("./fonts/framd.ttf");
+    url("./fonts/framd.ttf")format("ttf");
 }
 
+@font-face {
+    font-family: "Franklin Gothic Bold";
+    src: url("./fonts/FRAHV.TTF");
+    url("./fonts/FRAHV.TTF")format("ttf");
+}
 
-@keyframes logo {
-  from {top:-100px; opacity:0;}
-  to {top:-5px; opacity: 1;}
+@keyframes load {
+from {margin-top:-15px;}
+to {margin-top:19px;}
 }
-@keyframes gotcha {
-  0% {top:-200px;opacity:0;}
-  50% {opacity:1; top:-25px;}
-  100% {opacity:1; top:-50px;}
-}
-@keyframes bg {
-from {opacity:0;}
-to {opacity:1;}
+
+@keyframes load_c {
+from {background-color:white;}
+to {background-color:#2d0e44;}
 }
