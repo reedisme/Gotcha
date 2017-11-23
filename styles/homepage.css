@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     font-family: Franklin Gothic Medium;
     animation-name: load_c;
-    animation-delay: .4s;
+    animation-delay: 1s;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
@@ -20,7 +20,7 @@ body {
 .logo {
     font-family: Garamond;
     animation-name: load;
-    animation-duration: .4s;
+    animation-duration: 1s;
     position:absolute;
     color: white;/*#2d0e44;*/
     font-size: 25px;
@@ -33,8 +33,13 @@ body {
     width:300px;
 }
 .footer {
-    background-color: #2d0e44;
+    background-color: black;/*#2d0e44;*/
     color:black;
+    animation-name:load_c;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-duration:4s;
 }
 .header {
     height:50px;
@@ -57,7 +62,6 @@ body {
 }
 .page {
     width:105%;
-    height:100vh;
     position:relative;
     overflow-x:hidden;
     overflow-y:hidden;
@@ -69,7 +73,8 @@ body {
     font-family: Franklin Gothic Medium;
     font-size:20px;
     color:white;
-    padding-top:250px;
+    padding-top:300px;
+    padding-bottom:450px;
     width:50%;
     margin: 0 auto;
 }
