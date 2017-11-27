@@ -62,10 +62,10 @@ body {
     z-index:98;
     color:black;
     font-family: Stencil Regular;/*Franklin Gothic Bold;*/
-    font-size: 26vw;
+    font-size: 27vw;
     margin-top:-4vw;
     -webkit-margin-top:-1vw;
-    margin-left:-26px;
+    margin-left:-2.5vw;
 }
 .page {
     width:105%;
@@ -101,7 +101,7 @@ body {
     }
     .content {
         padding-top:0px;
-        font-size:30px;
+        font-size:25px;
         padding-bottom:0px;
         width:90%;
     }
