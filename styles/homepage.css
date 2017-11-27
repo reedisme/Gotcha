@@ -1,3 +1,8 @@
+html {
+      line-height: 1.15; /* 1 */
+        -ms-text-size-adjust: 100%; /* 2 */
+          -webkit-text-size-adjust: 100%; /* 2 */
+}
 body {
     background-color: black;
     overflow-x: hidden;
@@ -56,9 +61,10 @@ body {
     font-weight:200;
     z-index:98;
     color:black;
-    font-family: Stencil;/*Franklin Gothic Bold;*/
+    font-family: Stencil Regular;/*Franklin Gothic Bold;*/
     font-size: 26vw;
     margin-top:-4vw;
+    -webkit-margin-top:-1vw;
     margin-left:-26px;
 }
 .page {
@@ -67,6 +73,7 @@ body {
     overflow-x:hidden;
     overflow-y:hidden;
     margin-top:-29vw;
+    -webkit-margin-top: -25vw;
     margin-left:-10px;
     background-color:black;
 }
@@ -88,8 +95,23 @@ body {
     background:#2d0e44;
 }
 
+@media screen and (max-width: 500px) {
+    .bubble {
+        display:none;
+    }
+    .content {
+        padding-top:0px;
+        font-size:30px;
+        padding-bottom:0px;
+        width:90%;
+    }
+    .content h1{
+        display:none;
+    }
+}
+
 @font-face{
-    font-family: "Stencil";
+    font-family: "Stencil Regular";
     src: url("./fonts/Stencil.ttf");
     url("./fonts/Stencil.ttf")format("ttf");
 }
