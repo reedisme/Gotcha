@@ -13,25 +13,25 @@ $(document).ready(function () {
 function scroll() {
         var elem  = "#a".concat(Math.floor((Math.random() * 4) + 1));
         console.log(elem);
-        $(elem).css("marginTop", "-70vh");
-        $(elem).animate({marginTop:"80vh",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll);
+        $(elem).css("marginTop", "-650px");
+        $(elem).animate({marginTop:"850px",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll);
 }
 function scroll2() {
         var elem  = "#b".concat(Math.floor((Math.random() * 4) + 1));
         console.log(elem);
-        $(elem).css("marginTop", "-70vh");
-        $(elem).animate({marginTop:"80vh",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll2);
+        $(elem).css("marginTop", "-650px");
+        $(elem).animate({marginTop:"850px",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll2);
 }
 function scroll3() {
         var elem  = "#c".concat(Math.floor((Math.random() * 4) + 1));
         console.log(elem);
-        $(elem).css("marginTop", "-70vh");
-        $(elem).animate({marginTop:"80vh",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll3);
+        $(elem).css("marginTop", "-650px");
+        $(elem).animate({marginTop:"850px",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll3);
 }
 function scroll4() {
         var elem  = "#d".concat(Math.floor((Math.random() * 4) + 1));
         console.log(elem);
-        $(elem).css("marginTop", "-70vh");
-        $(elem).animate({marginTop:"80vh",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll4);
+        $(elem).css("marginTop", "-650px");
+        $(elem).animate({marginTop:"850px",}, Math.floor(Math.random()*(50000-10000+1)+10000), scroll4);
 }
 
