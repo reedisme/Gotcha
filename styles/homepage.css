@@ -57,7 +57,7 @@ body {
     color:black;
     font-family: Stencil;/*Franklin Gothic Bold;*/
     font-size: 26vw;
-    margin-top:-7vw;
+    margin-top:-4vw;
     margin-left:-26px;
 }
 .page {
@@ -65,7 +65,7 @@ body {
     position:relative;
     overflow-x:hidden;
     overflow-y:hidden;
-    margin-top:-26vw;
+    margin-top:-29vw;
     margin-left:-10px;
     background-color:black;
 }
@@ -77,6 +77,12 @@ body {
     padding-bottom:450px;
     width:50%;
     margin: 0 auto;
+}
+
+@font-face{
+    font-family: "Stencil";
+    src: url("./fonts/Stencil.ttf");
+    url("./fonts/Stencil.ttf")format("ttf");
 }
 
 @font-face{
