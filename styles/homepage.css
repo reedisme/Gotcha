@@ -53,6 +53,7 @@ body {
     -moz-user-select: none;
     user-select: none;
     position:relative;
+    font-weight:200;
     z-index:98;
     color:black;
     font-family: Stencil;/*Franklin Gothic Bold;*/
@@ -77,6 +78,14 @@ body {
     padding-bottom:450px;
     width:50%;
     margin: 0 auto;
+}
+
+::selection {
+    background:#2d0e44;
+}
+
+::-moz-selection {
+    background:#2d0e44;
 }
 
 @font-face{
