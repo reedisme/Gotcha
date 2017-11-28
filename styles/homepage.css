@@ -126,6 +126,7 @@ body {
 .button:hover {
     width:55%;
 }
+
 .button:hover .button_text{
     margin-left:20px;
     color:white;
@@ -151,6 +152,20 @@ body {
     }
     .content h1{
         display:none;
+    }
+    .button_text {
+        color:white;
+    }
+    .buttons {
+        text-align:center;
+    }
+    .button {
+        width:150%;
+        margin-bottom: 20px;
+        float:none !important;
+    }
+    .button:hover {
+        width:150%;
     }
 }
 
