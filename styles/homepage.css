@@ -169,10 +169,12 @@ body {
     }
 }
 
-@font-face{
-    font-family: "Stencil Regular";
-    src: url("./fonts/Stencil.ttf");
-    url("./fonts/Stencil.ttf")format("ttf");
+@font-face {
+    font-family: 'Stencil Regular';
+    src: url('./fonts/stencil-webfont.woff2') format('woff2'),
+    url('./fonts/stencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face{
