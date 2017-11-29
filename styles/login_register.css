@@ -1,0 +1,109 @@
+html, body {
+    background-color:black;
+    height:100%;
+    overflow-y:hidden;
+    width:100%;
+    margin: 0;
+    font-family: Franklin Gothic;
+}
+.log {
+    background-color:#2d0e44;
+    height:50%;
+    width:100%;
+}
+.reg {
+    background-color:white;
+    height:50%;
+    width:100%;
+}
+.blocker_text_container h1 {
+    display:inline-block;
+    font-size: 25px;
+    margin: 0;
+}
+.blocker_text_container {
+    bottom:0;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:500px;
+}
+.blocker {
+    background-color:black;
+    z-index:99;
+    height:25%;
+    position:relative;
+    width:100%;
+}
+.logreg {
+    height:100%;
+    position:absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    width:500px;
+    background-color:white;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+    
+input[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+        background-color: #45a049;
+}
+
+.transform {
+    transition:all 0.4s ease;
+    top:25%;
+}
+.transform-active {
+    transition:all 0.4s ease;
+    top:-25%;
+}
+.unselect {
+    transition:all 0.4s ease;
+    cursor:pointer;
+    color:white;
+}
+.select {
+    transition:all 0.4s ease;
+    cursor:default;
+    color:#2d0e44;
+}
+
+
+#register {
+    position:absolute;
+    right:0;
+}
+
+
+@font-face{
+    font-family: "Franklin Gothic Medium";
+    src: url("./fonts/framd.ttf");
+    url("./fonts/framd.ttf")format("ttf");
+}
+
+@font-face {
+    font-family: "Franklin Gothic Bold";
+    src: url("./fonts/FRAHV.TTF");
+    url("./fonts/FRAHV.TTF")format("ttf");
+}
