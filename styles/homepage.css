@@ -141,7 +141,7 @@ body {
     background:#2d0e44;
 }
 
-@media all and (max-width: 320px) and (min-height: 320px){
+@media all and (max-width: 760px){
     .bubble {
         display:none;
     }
