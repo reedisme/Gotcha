@@ -29,13 +29,13 @@ label {
 
 .log {
     background-color:#2d0e44;
-    border-radius:5px;
+    border-radius:15px;
     height:50%;
     width:100%;
 }
 .reg {
     background-color:white;
-    border-radius:5px;
+    border-radius:15px;
     height:50%;
     width:100%;
 }
