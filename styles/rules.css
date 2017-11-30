@@ -1,0 +1,112 @@
+html {
+      line-height: 1.15; /* 1 */
+        -ms-text-size-adjust: 100%; /* 2 */
+          -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+    background-color: #2d0e44;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Franklin Gothic Medium;
+}
+p {
+    line-height:1.5;
+}
+.logo {
+    font-family: Garamond;
+    position:absolute;
+    color: white;/*#2d0e44;*/
+    font-size: 25px;
+    font-weight: 500;
+    z-index:99;
+    left: 36px;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 8px;
+    width:300px;
+}
+.footer {
+    background-color: #2d0e44;
+    color:black;
+}
+.header {
+    height:50px;
+    background-color:black;
+}
+.gotcha {
+    text-align: center;
+    -moz-user-select: none;
+    user-select: none;
+    position:relative;
+    font-weight:200;
+    z-index:98;
+    color:black;
+    font-family: Stencil Regular;/*Franklin Gothic Bold;*/
+    font-size: 27vw;
+    margin-top:-7vw;
+    -webkit-margin-top:-1vw;
+    margin-left:-2.5vw;
+}
+.page {
+    width:100%;
+    position:relative;
+    z-index:99;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    margin-top:-26vw;
+    background-color:black;
+}
+.content {
+    font-family: Franklin Gothic Medium;
+    font-size:20px;
+    color:white;
+    padding-top:200px;
+    padding-bottom:300px;
+    width:52%;
+    margin: 0 auto;
+}
+li {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+
+::selection {
+    background:#2d0e44;
+}
+
+::-moz-selection {
+    background:#2d0e44;
+}
+
+@media all and (max-width: 760px){
+    .content {
+        padding-top:50px;
+        font-size:25px;
+        padding-bottom:50px;
+        width:90%;
+    }
+    h1 {
+        margin-left:0 !important;
+    }
+}
+
+@font-face {
+    font-family: 'Stencil Regular';
+    src: url('./fonts/stencil-webfont.woff2') format('woff2'),
+    url('./fonts/stencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Franklin Gothic Medium";
+    src: url("./fonts/framd.ttf");
+    url("./fonts/framd.ttf")format("ttf");
+}
+
+@font-face {
+    font-family: "Franklin Gothic Bold";
+    src: url("./fonts/FRAHV.TTF");
+    url("./fonts/FRAHV.TTF")format("ttf");
+}
+
