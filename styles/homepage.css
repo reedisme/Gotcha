@@ -5,6 +5,7 @@ html {
 }
 body {
     background-color: black;
+    margin: 0;
     overflow-x: hidden;
     font-family: Franklin Gothic Medium;
     animation-name: load_c;
@@ -27,7 +28,6 @@ body {
     height:100%;
     text-align:left;
     cursor:pointer;
-    box-shadow:0px 0px 200px #000;
     color:rgba(0, 0, 0, 0);
     white-space:nowrap;
     width:100px;
@@ -67,10 +67,10 @@ body {
     font-size: 25px;
     font-weight: 500;
     z-index:99;
-    left: 86px;
+    left: 36px;
     right: 0;
     margin: 0 auto;
-    margin-top: 19px;
+    margin-top: 8px;
     width:300px;
 }
 .footer {
@@ -84,10 +84,7 @@ body {
 }
 .header {
     height:50px;
-    margin-left: -10px;
-    margin-top: -25px;
     background-color:black;
-    margin-right:-8px;
 }
 .gotcha {
     text-align: center;
@@ -104,14 +101,13 @@ body {
     margin-left:-2.5vw;
 }
 .page {
-    width:105%;
+    width:100%;
     position:relative;
     z-index:99;
     overflow-x:hidden;
     overflow-y:hidden;
     margin-top:-26vw;
     -webkit-margin-top: -25vw;
-    margin-left:-10px;
     background-color:black;
 }
 .content {
@@ -191,8 +187,8 @@ body {
 }
 
 @keyframes load {
-from {margin-top:-15px;}
-to {margin-top:19px;}
+from {margin-top:-25px;}
+to {margin-top:8px;}
 }
 
 @keyframes load_c {
