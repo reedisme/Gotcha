@@ -141,7 +141,7 @@ body {
     background:#2d0e44;
 }
 
-@media handheld, (max-width: 750px) {
+@media all and (max-width: 320px) and (min-height: 320px){
     .bubble {
         display:none;
     }
