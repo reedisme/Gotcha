@@ -125,6 +125,14 @@ input[type=submit]:hover {
     right:0;
 }
 
+@media all and (max-width: 760px){
+    .logreg {
+        width:100%;
+    }
+    .blocker_text_container {
+        width:100%;
+    }
+}
 
 @font-face{
     font-family: "Franklin Gothic Medium";
