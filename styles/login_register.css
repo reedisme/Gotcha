@@ -26,6 +26,14 @@ label {
     position: relative;
     right:35%;
 }
+span {
+	position:absolute;
+	margin-top: 54px;
+	margin-left:-511px;
+	width:500px;
+	text-align:right;
+	font-size:12px;
+}
 
 .log {
     background-color:#2d0e44;
@@ -69,7 +77,7 @@ label {
     width:500px;
 }
 
-input[type=text], select {
+input[type=text], select, input[type=password] {
     width: 80%;
     padding: 12px 20px;
     margin-top:8px;
@@ -79,7 +87,7 @@ input[type=text], select {
     border-radius: 300px;
 }
 
-.reg input[type=text], select {
+.reg input[type=text], .reg input[type=password], select {
     color:white;
     background-color:#2d0e44;
 }
