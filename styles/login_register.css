@@ -7,11 +7,11 @@ html, body {
     font-family: Franklin Gothic Medium;
 }
 .log form {
-    top:25%;
+    top:350px;
 }
 .reg form {
     color:#2d0e44;
-    top:75%;
+    top:725px;
 }
 form {
     margin: 0 auto;
@@ -20,19 +20,39 @@ form {
     left:0;
     right:0;
     width:75%;
-    transform: translateY(-50%);
+    transform: translateY(-191px);
 }
 label {
     position: relative;
+    top:-10px;
     right:35%;
 }
 span {
 	position:absolute;
-	margin-top: 54px;
+	margin-top: 39px;
 	margin-left:-511px;
 	width:500px;
 	text-align:right;
 	font-size:12px;
+}
+.warning {
+	height:25px;
+	background-color:white;
+	text-align:center;
+}
+.desc_box {
+	width:80%;
+	left:0;
+	right:0;
+	transition: all 0.4s ease;
+	margin:0 auto;
+	height:600px;
+	text-align:center;
+	border-radius:10px;
+	background-color:#2d0e44;
+	position:absolute;
+	z-index:100;
+	transform:translateY(-50%);
 }
 
 .log {
@@ -63,14 +83,14 @@ span {
 .blocker {
     background-color:black;
     z-index:99;
-    height:25%;
     position:relative;
+    height:241px;
     width:100%;
 }
 .logreg {
-    height:100%;
+    height:975px;
     color:white;
-    position:absolute;
+    position:relative;
     left:0;
     right:0;
     margin: 0 auto;
@@ -80,7 +100,7 @@ span {
 input[type=text], select, input[type=password] {
     width: 80%;
     padding: 12px 20px;
-    margin-top:8px;
+    margin-top:-4px;
     margin-bottom:30px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -91,30 +111,49 @@ input[type=text], select, input[type=password] {
     color:white;
     background-color:#2d0e44;
 }
+
+textarea {
+	padding:10px;
+	border-radius:10px;
+	width:80%;
+	height:65%;
+	position:relative;
+	font-family: Franklin Gothic Medium;
+	top:38%;
+	resize:none;
+	transform:translateY(-50%);
+}
     
-input[type=submit] {
+input[type=submit], #c_submit {
     width: 25%;
     border-radius:300px;
     background-color: #965CC6;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 0 auto;
     transition:all 0.4s ease;
     border: none;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, #c_submit:hover {
     width:80%
+}
+.no_submit {
+	top:-500px;
+}
+
+.submit {
+	top:50%;
 }
 
 .transform {
     transition:all 0.4s ease;
-    top:25%;
+    top:1px;
 }
 .transform-active {
     transition:all 0.4s ease;
-    top:-25%;
+    top:-488px;
 }
 .unselect {
     transition:all 0.4s ease;
@@ -140,6 +179,11 @@ input[type=submit]:hover {
     .blocker_text_container {
         width:100%;
     }
+}
+@media all and (max-height:750px){
+	body {
+	overflow-y:auto;
+	}	
 }
 
 @font-face{

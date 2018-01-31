@@ -1,0 +1,163 @@
+html {
+      line-height: 1.15; /* 1 */
+      height:100%;
+      -ms-text-size-adjust: 100%; /* 2 */
+      -webkit-text-size-adjust: 100%; /* 2 */
+}
+label {
+	margin-top:5px;
+}
+body {
+      overflow-x:hidden;
+      background-color:black;
+      height:100%;
+      margin: 0;
+}
+textarea {
+	height:300px;
+	width:425px;
+	border-radius:15px;
+	border:none;
+	padding:10px;
+	resize:none;
+}
+input {
+	border:none;
+	font-size:16px;
+	font-family:Franklin Gothic Medium;
+	padding:10px;
+	border-radius:15px;
+}
+input[type=submit]{
+    width: 25%;
+    border-radius:300px;
+    background-color: #965CC6;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    transition:all 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    width:80%
+}
+p a {
+	text-decoration:none;
+	color:white;
+	padding-right:10px;
+	transition: all 0.4s ease;
+}
+p a:hover {
+	color:black;
+}
+.selectbox select {
+	font-family: Franklin Gothic Medium;
+	font-size: 16px;
+	border:none;
+	background-color:white;
+}
+
+.selectbox {
+	border-radius:15px;
+	background-color:white;
+	overflow: hidden;
+	width:50%;
+	margin: 0 auto;
+	margin-bottom:35px;
+	margin-top:5px;
+	padding:10px;
+}
+.page_wrapper {
+	min-height:100%;
+	margin-bottom:-50px;
+	padding-bottom:50px;	
+}
+.header {
+    text-align: center;
+    -moz-user-select: none;
+    user-select: none;
+    z-index:98;
+    color:black;
+    font-family: Stencil Regular;/*Franklin Gothic Bold;*/
+    font-size: 15vw;
+    margin-top:-4vw;
+    height:13vw;
+    white-space:nowrap;
+    width:100%;
+    background-color:#2d0e44;
+}
+.bg {
+	width:50%;
+	left:0;
+	z-index:-1;
+	right:0;
+	margin: 0 auto;
+	margin-top: -9vw;
+	height:100vh;
+	position:absolute;
+    	background-color:#2d0e44;
+}
+.content {
+	color:white;
+	font-family: Franklin Gothic Medium;
+	padding-top:100px;
+	width:50%;
+	left:0;
+	height:115%;
+	position: relative;
+	text-align: center;
+	right:0;
+	padding-bottom:20px;
+	margin: 0 auto;
+    	background-color:#2d0e44;
+
+}
+.footer {
+	height:100px;
+	right:0;
+	bottom:0;
+	left:0;
+    	background-color:#2d0e44;
+	font-family:Franklin Gothic Medium;
+}
+.logout {
+	color:white;
+	display:inline;
+	float:right;
+	text-decoration:none;
+	margin:13px;
+	transition:0.4s all ease;
+}
+.logout:hover {
+	color:black;
+}
+
+@media all and (max-width: 760px){
+	.content {
+		width:100%;
+	}
+	.bg {
+		display:none;
+	}
+}
+
+@font-face {
+    font-family: 'Stencil Regular';
+    src: url('./fonts/stencil-webfont.woff2') format('woff2'),
+    url('./fonts/stencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Franklin Gothic Medium";
+    src: url("./fonts/framd.ttf");
+    url("./fonts/framd.ttf")format("ttf");
+}
+
+@font-face {
+    font-family: "Franklin Gothic Bold";
+    src: url("./fonts/FRAHV.TTF");
+    url("./fonts/FRAHV.TTF")format("ttf");
+}

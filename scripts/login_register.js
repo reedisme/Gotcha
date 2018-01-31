@@ -16,4 +16,8 @@ $('#login').click(function() {
          document.getElementById('register').classList.remove('select');
          document.getElementById('register').classList.add('unselect');
 });
+$('#c_submit').click(function() {
+         document.getElementById('desc_box').classList.remove('no_submit');
+         document.getElementById('desc_box').classList.add('submit');
+});
 });

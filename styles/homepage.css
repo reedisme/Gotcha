@@ -17,12 +17,42 @@ body {
 p {
     line-height:1.5;
 }
+p a {
+	text-decoration:none;
+	color:white;
+	padding-right:10px;
+	transition: all 0.4s ease;
+}
+p a:hover {
+	color:black;
+}
+.information_box {
+	color:black;
+	margin-top:-10vh;
+	border-radius: 15px;
+	background-color:white;
+	height:100px;
+}
+.information_box p {
+	text-align:center;
+	font-size:30px;
+	line-height:88px;
+}
 .buttons {
     height:100px;
     text-align:center;
     margin: auto;
     padding-bottom:300px;
     width:52%;
+}
+.logout {
+	color:white;
+	text-decoration:none;
+	margin:13px;
+	transition:0.4s all ease;
+}
+.logout:hover {
+	color:black;
 }
 .button {
     display:inline-block;
@@ -117,7 +147,6 @@ p {
     font-family: Franklin Gothic Medium;
     font-size:20px;
     color:white;
-    padding-top:40vh;
     padding-bottom:75px;
     width:52%;
     margin: 0 auto;
@@ -146,7 +175,6 @@ p {
     }
     .content {
         padding-top:50px;
-        font-size:25px;
         padding-bottom:0px;
         width:90%;
     }
