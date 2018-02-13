@@ -1,0 +1,200 @@
+html {
+	height:100%;
+      line-height: 1.15; /* 1 */
+        -ms-text-size-adjust: 100%; /* 2 */
+          -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+	height:100%;
+    background-color: #2d0e44;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Franklin Gothic Medium;
+    background-color:black;
+}
+ a {
+	text-decoration:none;
+	color:white;
+	padding-right:20px;
+	transition: all 0.4s ease;
+}
+p a:hover {
+	color:black;
+}
+input {
+	border:none;
+	font-size:16px;
+	width:95%;
+	font-family:Franklin Gothic Medium;
+	padding:10px;
+	border-radius:15px;
+}
+label {
+	color:white;
+}
+label h2 {
+	text-align:left;
+	margin-bottom:5px;
+	position:relative;
+	left:32%;
+}
+input[type=submit]{
+    width: 50%;
+    border-radius:300px;
+    background-color: #965CC6;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    transition:all 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    width:95%
+}
+textarea {
+	height:300px;
+	width:95%;
+	border-radius:15px;
+	border:none;
+	padding:10px;
+	resize:none;
+}
+.button {
+	display:inline-block;
+	width:50%;
+    	transition: width 0.4s ease;
+}
+.button:hover {
+	width:95%;
+}
+.submit_btn {
+    border-radius:300px;
+    background-color: #965CC6;
+    text-decoration:none;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    margin-bottom:20px;
+    border: none;
+    cursor: pointer;
+}
+.report {
+	background-color:#2d0e44;
+	border-radius:15px;
+	text-align:left;
+	margin: 0 auto;
+	margin-top:20px;
+	color:white;
+	padding:25px;
+	width:75%;
+}
+.report:hover .x {
+	opacity:1;
+}
+.option {
+	width:35%;
+	background-color:#272727;
+	padding:20px;
+	border-radius:15px;
+	margin: 0 auto;
+}
+.x {
+	opacity: 0;
+	transition: all 0.4s ease;
+	text-align: right;
+	margin-bottom: -21px;
+	margin-top:-9px;
+}
+.wrapper {
+	min-height:100%;
+	margin-bottom:-50px;
+	padding-bottom:50px;
+}
+.header {
+    text-align: center;
+    -moz-user-select: none;
+    user-select: none;
+    position:relative;
+    font-weight:200;
+    z-index:98;
+    color:black;
+    font-family: Stencil Regular;/*Franklin Gothic Bold;*/
+    font-size: 15vw;
+    margin-top:-4vw;
+    height:13vw;
+    -webkit-margin-top:-1vw;
+    margin-left:-2.5vw;
+    background-color:#2d0e44;
+}
+.footer {
+	width:100%;
+	font-family: Franklin Gothic Medium;
+	margin-top:59px;
+	height:50px;
+    	background-color:#2d0e44;
+}
+.logout {
+	color:white;
+	display:inline;
+	float:right;
+	text-decoration:none;
+	margin:13px;
+	transition:0.4s all ease;
+}
+.logout:hover {
+	color:black;
+}
+
+@media all and (max-width: 760px){
+	.report {
+		width:90%;
+	}
+	.option {
+		width:90%;
+	}
+	label h2 {
+		left:0;
+	}
+	input {
+		width:90%;
+	}
+	input[type=submit]{
+	    width:70%
+	}
+	textarea {
+		width:90%;
+	}
+	.footer {
+		font-size:13px;
+	}
+}
+
+::selection {
+    background:#2d0e44;
+}
+
+::-moz-selection {
+    background:#2d0e44;
+}
+
+@font-face {
+    font-family: 'Stencil Regular';
+    src: url('./fonts/stencil-webfont.woff2') format('woff2'),
+    url('./fonts/stencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Franklin Gothic Medium";
+    src: url("./fonts/framd.ttf");
+    url("./fonts/framd.ttf")format("ttf");
+}
+
+@font-face {
+    font-family: "Franklin Gothic Bold";
+    src: url("./fonts/FRAHV.TTF");
+    url("./fonts/FRAHV.TTF")format("ttf");
+}
